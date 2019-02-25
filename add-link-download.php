@@ -193,6 +193,7 @@ exit;
                             <div class="content">
                                 <?php
 $connection = mysqli_connect('localhost', 'audiname', 'pass', 'audiobook') or die(mysqli_error());
+mysqli_set_charset($connection, "utf8");
 
 // Загрузка файлов
 function upload($filename, $pach, $flag = true)

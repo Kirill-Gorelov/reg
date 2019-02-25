@@ -86,8 +86,17 @@ echo '<div align="center"><a href="reg.php">Регистрация</a></div>'; /
                                     <button name="submit" type="submit" class="btn btn-info btn-fill pull-right">Войти</button>
                                     <div class="clearfix"></div>
                                 </form>
-	<?php $connection = mysqli_connect('localhost', 'audiname', 'pass', 'audiobook') or die(mysqli_error()); 
-mysql_query('SET names utf8');
+    <?php $connection = mysqli_connect('localhost', 'audiname', 'pass', 'audiobook') or die(mysqli_error()); 
+//     if (!$connection) {
+//         echo "Ошибка: Невозможно установить соединение с MySQL." . PHP_EOL;
+//         echo "Код ошибки errno: " . mysqli_connect_errno() . PHP_EOL;
+//         echo "Текст ошибки error: " . mysqli_connect_error() . PHP_EOL;
+//         exit;
+//     }
+
+//     echo "Соединение с MySQL установлено!" . PHP_EOL;
+// echo "Информация о сервере: " . mysqli_get_host_info($connection) . PHP_EOL;
+// mysql_query('SET names utf8');
 	?> 
 
 <?php if (isset($_POST['submit'])) // Отлавливаем нажатие кнопки "Отправить"
@@ -106,6 +115,7 @@ $login = $_POST['login']; // Записываем логин в переменн
 $password = md5($_POST['password']); // Записываем пароль в переменную           
 $query = mysqli_query($connection, "SELECT `id` FROM `users` WHERE `login` = '$login' AND `password` = '$password'"); // Формируем переменную с запросом к базе данных с проверкой пользователя
 $result = mysqli_fetch_array($query); // Формируем переменную с исполнением запроса к БД 
+var_dump($result);
 if (empty($result['id'])) // Если запрос к бд не возвразяет id пользователя
 {
 echo '<script>alert("Неверные Логин или Пароль");</script>'; // Значит такой пользователь не существует или не верен пароль
@@ -118,7 +128,10 @@ $_SESSION['id'] = $result['id']; // Заносим в сессию  id
 echo '<div align="center" style="color: #000;">Вы успешно вощли в систему: '.$_SESSION['login'].'</div>'; // Выводим сообщение что пользователь авторизирован        
 }     
 }		
-} ?>
+} 
+
+
+?>
 
 <?php if (isset($_GET['exit'])) { // если вызвали переменную "exit"
 unset($_SESSION['password']); // Чистим сессию пароля

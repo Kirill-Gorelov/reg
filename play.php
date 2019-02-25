@@ -54,7 +54,7 @@ header('Location: play-youtube.php?id='.$idknigi.'');
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
-	<script src="assets/js/online.js"></script>
+	<!-- <script src="assets/js/online.js"></script> -->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script src="assets/js/audioplayer.js"></script>
 
@@ -167,8 +167,7 @@ header('Location: play-youtube.php?id='.$idknigi.'');
 				<p></p>
 						   <div id="msg"></div>
 		<form action="/reg/play.php?id=<?php echo $idknigi ?>" method="post">
-		  <input id="pbr" type="range" value="1" min="0.5" max="4" step="0.1" >
-  <p>Ускорение <span id="currentPbr">1</span></p>
+		  
 					
 
        <?php
@@ -209,13 +208,18 @@ while($result = mysqli_fetch_array($query))
 {
 $ch++;
 echo '
+
  <p>'.$result['links'].'</p>
   <p>'.$result['title_links'].'</p>
-<audio id="audio" controls style="width: 100%;">
-  <source src="'.$result['links'].'" type="audio/mp3">
+<video id="audio" controls style="width: 100%;">
+  <!-- <source src="'.$result['links'].'" type="audio/mp3"> -->
+  <source src="'.$result['links'].'" type="video/mp4">
   Ваш браузер не поддерживает воспроизведение, смените браузер.
-</audio >
+</video>
 </br>
+
+<input id="pbr" type="range" value="1" min="0.5" max="2" step="0.1" >
+  <p>Ускорение <span id="currentPbr">1</span></p>
 </br>
 <button onclick="plusCurTime5()" type="button">+5 сек</button>
 <button onclick="plusCurTime10()" type="button">+10 сек</button>
@@ -279,9 +283,10 @@ echo '</table>';
 	$count = $x; // сделать нормально
 
     // $dir = $_SERVER['DOCUMENT_ROOT']."/reg/users/".$login."/".$idknigi."/bdk/";
-    $dir = $_SERVER['DOCUMENT_ROOT']."/reg/users/".$login."/2513323/bdk/";
+   // $dir = $_SERVER['DOCUMENT_ROOT']."/reg/users/".$login."/2513323/bdk/";
 
 echo "<pre>";
+/*
  function getFileList($dir, $recurse=false, $depth=false){
    $authorid = $_SESSION['login']; //id того кто добавляет книгу
 	   $login = $_SESSION['id'];
@@ -327,7 +332,7 @@ $path_info = pathinfo($val);
     if( $path_info['extension'] == "mp3"){
 	// echo "http://".$val."<></br>";
 	}
-}
+}*/
 echo "</pre>";
 
 

@@ -193,6 +193,7 @@ exit;
                             <div class="content">
                                 <?php
 $connection = mysqli_connect('localhost', 'audiname', 'pass', 'audiobook') or die(mysqli_error());
+mysqli_set_charset($connection, "utf8");
 
 // Загрузка файлов
 function upload($filename, $pach, $flag = false)
@@ -283,6 +284,8 @@ $filname = $_SERVER['DOCUMENT_ROOT']."/reg/users/".$login."/".$id_knigi;
 //echo $filname;
 
  mkdir($filname, 0777, true);
+//  chgrp($filname, 'kirill');
+//  chown($filname, 'kirill');
 // foreach($img_desc as $val) {
  echo upload('filename', $filname, $_POST['f']);
   if($_FILES['filename1']['name'] != ''){
@@ -336,6 +339,216 @@ $filname = $_SERVER['DOCUMENT_ROOT']."/reg/users/".$login."/".$id_knigi;
    if($_FILES['filename17']['name'] != ''){
 	echo upload('filename17', $filname, $_POST['f']);
  }
+
+ if($_FILES['filename18']['name'] != ''){ 
+     echo upload('filename18',$filname,$_POST['f']); 
+ }
+if($_FILES['filename19']['name'] != ''){
+     echo upload('filename19', $filname, $_POST['f']);
+ }
+ 
+ if($_FILES['filename20']['name'] != ''){
+      echo upload('filename20',$filname,$_POST['f']); 
+    }
+    
+if($_FILES['filename21']['name'] != ''){ 
+    echo upload('filename21', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename22']['name'] != ''){ 
+    echo upload('filename22', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename23']['name'] != ''){ 
+    echo upload('filename23', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename24']['name'] != ''){ 
+    echo upload('filename24', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename25']['name'] != ''){ 
+    echo upload('filename25', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename26']['name'] != ''){ 
+    echo upload('filename26', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename27']['name'] != ''){ 
+    echo upload('filename27', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename28']['name'] != ''){ 
+    echo upload('filename28', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename29']['name'] != ''){ 
+    echo upload('filename29', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename30']['name'] != ''){ 
+    echo upload('filename30', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename31']['name'] != ''){ 
+    echo upload('filename31', $filname, $_POST['f']); 
+}
+if($_FILES['filename32']['name'] != ''){ 
+    echo upload('filename32', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename33']['name'] != ''){ 
+    echo upload('filename33', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename34']['name'] != ''){ 
+    echo upload('filename34', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename35']['name'] != ''){ 
+    echo upload('filename35', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename36']['name'] != ''){ 
+    echo upload('filename36', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename37']['name'] != ''){ 
+    echo upload('filename37', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename38']['name'] != ''){ 
+    echo upload('filename38', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename39']['name'] != ''){ 
+    echo upload('filename39', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename40']['name'] != ''){ 
+    echo upload('filename40', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename41']['name'] != ''){ 
+    echo upload('filename41', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename42']['name'] != ''){ 
+    echo upload('filename42', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename43']['name'] != ''){ 
+    echo upload('filename43', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename44']['name'] != ''){ 
+    echo upload('filename44', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename45']['name'] != ''){ 
+    echo upload('filename45', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename46']['name'] != ''){ 
+    echo upload('filename46', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename47']['name'] != ''){ 
+    echo upload('filename47', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename48']['name'] != ''){ 
+    echo upload('filename48', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename49']['name'] != ''){ 
+    echo upload('filename49', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename50']['name'] != ''){ 
+    echo upload('filename50', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename51']['name'] != ''){ 
+    echo upload('filename51', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename52']['name'] != ''){ 
+    echo upload('filename52', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename53']['name'] != ''){ 
+    echo upload('filename53', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename54']['name'] != ''){ 
+    echo upload('filename54', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename55']['name'] != ''){ 
+    echo upload('filename55', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename56']['name'] != ''){ 
+    echo upload('filename56', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename57']['name'] != ''){ 
+    echo upload('filename57', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename58']['name'] != ''){ 
+    echo upload('filename58', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename59']['name'] != ''){ 
+    echo upload('filename59', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename60']['name'] != ''){ 
+    echo upload('filename60', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename61']['name'] != ''){ 
+    echo upload('filename61', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename62']['name'] != ''){ 
+    echo upload('filename62', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename63']['name'] != ''){ 
+    echo upload('filename63', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename64']['name'] != ''){ 
+    echo upload('filename64', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename65']['name'] != ''){ 
+    echo upload('filename65', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename66']['name'] != ''){ 
+    echo upload('filename66', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename67']['name'] != ''){ 
+    echo upload('filename67', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename68']['name'] != ''){ 
+    echo upload('filename68', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename69']['name'] != ''){ 
+    echo upload('filename69', $filname, $_POST['f']); 
+}
+
+if($_FILES['filename70']['name'] != ''){ 
+    echo upload('filename70', $filname, $_POST['f']); 
+}
 
 
 echo "</br>";

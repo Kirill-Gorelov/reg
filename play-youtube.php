@@ -42,14 +42,18 @@ $connection = mysqli_connect('localhost', 'audiname', 'pass', 'audiobook') or di
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
 	
+  <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
 	<!-- <script src="assets/js/online.js"></script> -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-<script src="assets/js/audioplayer.js"></script>
+<!-- <script src="assets/js/audioplayer.js"></script> -->
+<script>
+    $(document).ready(function() { 
+        $("audio").audioPlayer(); 
+    });
+</script>
 
-<script>$( function() { $( "audio" ).audioPlayer(); } );</script>
 </head>
 <body>
 
@@ -502,22 +506,22 @@ echo '
 	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 
 	<!--  Checkbox, Radio & Switch Plugins -->
-	<script src="assets/js/bootstrap-checkbox-radio-switch.js"></script>
+	// <script src="assets/js/bootstrap-checkbox-radio-switch.js"></script>
 
 	<!--  Charts Plugin -->
-	<script src="assets/js/chartist.min.js"></script>
+	// <script src="assets/js/chartist.min.js"></script>
 
     <!--  Notifications Plugin    -->
-    <script src="assets/js/bootstrap-notify.js"></script>
+    // <script src="assets/js/bootstrap-notify.js"></script>
 
     <!--  Google Maps Plugin    -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    // <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
     <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
 	<script src="assets/js/light-bootstrap-dashboard.js"></script>
 
 	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
-	<script src="assets/js/demo.js"></script>
+	// <script src="assets/js/demo.js"></script>
 
 
 </html>

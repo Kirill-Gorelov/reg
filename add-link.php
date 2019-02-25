@@ -195,24 +195,77 @@ exit;
                                         <div class="col-md-5">
                                             <div class="form-group">
                                                 <label>Выбрать файл. Не больше 18 шт. 100мб/1шт</label>
-                                                 <input type = "file" name="filename"  accept="audio/mp3" id="namefile"/>
-												 <input type = "file" name="filename1" accept="audio/mp3" id="namefile"/>
-												 <input type = "file" name="filename2" accept="audio/mp3" id="namefile"/>
-												 <input type = "file" name="filename3" accept="audio/mp3" id="namefile"/> 
-												 <input type = "file" name="filename4" accept="audio/mp3" id="namefile"/>
-												 <input type = "file" name="filename5" accept="audio/mp3" id="namefile"/>
-												 <input type = "file" name="filename6" accept="audio/mp3" id="namefile"/>
-												 <input type = "file" name="filename7" accept="audio/mp3" id="namefile"/>
-												 <input type = "file" name="filename8" accept="audio/mp3" id="namefile"/>
-												 <input type = "file" name="filename9" accept="audio/mp3" id="namefile"/> 
-												 <input type = "file" name="filename10" accept="audio/mp3" id="namefile"/> 
-												 <input type = "file" name="filename11" accept="audio/mp3" id="namefile"/> 
-												 <input type = "file" name="filename12" accept="audio/mp3" id="namefile"/> 
-												 <input type = "file" name="filename13" accept="audio/mp3" id="namefile"/> 
-												 <input type = "file" name="filename14" accept="audio/mp3" id="namefile"/> 
-												 <input type = "file" name="filename15" accept="audio/mp3" id="namefile"/> 
-												 <input type = "file" name="filename16" accept="audio/mp3" id="namefile"/> 
-												 <input type = "file" name="filename17" accept="audio/mp3" id="namefile"/> 
+                                                 <input type = "file" name="filename"   id="namefile"/>
+												 <input type = "file" name="filename1"  id="namefile"/>
+												 <input type = "file" name="filename2"  id="namefile"/>
+												 <input type = "file" name="filename3"  id="namefile"/> 
+												 <input type = "file" name="filename4"  id="namefile"/>
+												 <input type = "file" name="filename5"  id="namefile"/>
+												 <input type = "file" name="filename6"  id="namefile"/>
+												 <input type = "file" name="filename7"  id="namefile"/>
+												 <input type = "file" name="filename8"  id="namefile"/>
+												 <input type = "file" name="filename9"  id="namefile"/> 
+												 <input type = "file" name="filename10"  id="namefile"/> 
+												 <input type = "file" name="filename11"  id="namefile"/> 
+												 <input type = "file" name="filename12"  id="namefile"/> 
+												 <input type = "file" name="filename13"  id="namefile"/> 
+												 <input type = "file" name="filename14"  id="namefile"/> 
+												 <input type = "file" name="filename15"  id="namefile"/> 
+												 <input type = "file" name="filename16"  id="namefile"/> 
+                                                 <input type = "file" name="filename17"  id="namefile"/>
+                                                 <input type="file" name="filename18" id="namefile">
+                                                 <input type="file" name="filename19" id="namefile">
+                                                 <input type="file" name="filename20" id="namefile">
+                                                 <input type="file" name="filename21" id="namefile">
+                                                 <input type="file" name="filename22" id="namefile">
+                                                 <input type="file" name="filename23" id="namefile">
+                                                 <input type="file" name="filename24" id="namefile">
+                                                 <input type="file" name="filename25" id="namefile">
+                                                 <input type="file" name="filename26" id="namefile">
+                                                 <input type="file" name="filename27" id="namefile">
+                                                 <input type="file" name="filename28" id="namefile">
+                                                 <input type="file" name="filename29" id="namefile">
+                                                 <input type="file" name="filename30" id="namefile">
+                                                 <input type="file" name="filename31" id="namefile">
+                                                 <input type="file" name="filename32" id="namefile">
+                                                 <input type="file" name="filename33" id="namefile">
+                                                 <input type="file" name="filename34" id="namefile">
+                                                 <input type="file" name="filename35" id="namefile">
+                                                 <input type="file" name="filename36" id="namefile">
+                                                 <input type="file" name="filename37" id="namefile">
+                                                 <input type="file" name="filename38" id="namefile">
+                                                 <input type="file" name="filename39" id="namefile">
+                                                 <input type="file" name="filename40" id="namefile">
+                                                 <input type="file" name="filename41" id="namefile">
+                                                 <input type="file" name="filename42" id="namefile">
+                                                 <input type="file" name="filename43" id="namefile">
+                                                 <input type="file" name="filename44" id="namefile">
+                                                 <input type="file" name="filename45" id="namefile">
+                                                 <input type="file" name="filename46" id="namefile">
+                                                 <input type="file" name="filename47" id="namefile">
+                                                 <input type="file" name="filename48" id="namefile">
+                                                 <input type="file" name="filename49" id="namefile">
+                                                 <input type="file" name="filename50" id="namefile">
+                                                 <input type="file" name="filename51" id="namefile">
+                                                 <input type="file" name="filename52" id="namefile">
+                                                 <input type="file" name="filename53" id="namefile">
+                                                 <input type="file" name="filename54" id="namefile">
+                                                 <input type="file" name="filename55" id="namefile">
+                                                 <input type="file" name="filename56" id="namefile">
+                                                 <input type="file" name="filename57" id="namefile">
+                                                 <input type="file" name="filename58" id="namefile">
+                                                 <input type="file" name="filename59" id="namefile">
+                                                 <input type="file" name="filename60" id="namefile">
+                                                 <input type="file" name="filename61" id="namefile">
+                                                 <input type="file" name="filename62" id="namefile">
+                                                 <input type="file" name="filename63" id="namefile">
+                                                 <input type="file" name="filename64" id="namefile">
+                                                 <input type="file" name="filename65" id="namefile">
+                                                 <input type="file" name="filename66" id="namefile">
+                                                 <input type="file" name="filename67" id="namefile">
+                                                 <input type="file" name="filename68" id="namefile">
+                                                 <input type="file" name="filename69" id="namefile">
+                                                 <input type="file" name="filename70" id="namefile"> 
 												<!--  https://new.vk.com/feed?w=wall-46347604_110778 accept="audio/mp3" -->
                                             </div>
                                         </div>
