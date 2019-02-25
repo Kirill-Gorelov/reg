@@ -59,6 +59,12 @@ header('Location: play-youtube.php?id='.$idknigi.'');
 <script src="assets/js/audioplayer.js"></script>
 
 <script>$( function() { $( "audio" ).audioPlayer(); } );</script>
+<style>
+.prokrutka {
+height:300px; /* высота нашего блока */
+overflow: auto; /* свойство для прокрутки по горизонтали. Автоматом, если больше блока */
+}
+</style>
 </head>
 <body>
 
@@ -240,7 +246,8 @@ echo '
 <br>
 ';
 }
-echo '<table border="0" width="90%" cellspacing="0" cellpadding="0">';
+echo '<div class="prokrutka">
+<table border="0" width="90%" cellspacing="0" cellpadding="0">';
 $ch = 0;
 $query = mysqli_query($connection, "SELECT `links`, `progress`, `stoping`, `title_links`, `comment`, `id`, `all` FROM `link` WHERE `id_knigi` = '$idknigi' ORDER by `sort` ASC"); 
 while($result = mysqli_fetch_array($query))
@@ -270,7 +277,7 @@ echo'
 </tr>
 ';
 }
-echo '</table>';
+echo '</table> </div>';
 // $count = count($ch);
 //echo $count;
 
