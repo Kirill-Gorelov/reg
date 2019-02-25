@@ -242,17 +242,22 @@ echo '
 }
 echo '<table border="0" width="90%" cellspacing="0" cellpadding="0">';
 $ch = 0;
-$query = mysqli_query($connection, "SELECT `links`, `progress`, `stoping`, `title_links`, `comment`, `id` FROM `link` WHERE `id_knigi` = '$idknigi' ORDER by `sort` ASC"); 
+$query = mysqli_query($connection, "SELECT `links`, `progress`, `stoping`, `title_links`, `comment`, `id`, `all` FROM `link` WHERE `id_knigi` = '$idknigi' ORDER by `sort` ASC"); 
 while($result = mysqli_fetch_array($query))
 {
 $ch++;
 if(strlen($result['comment']) != '0'){
 $ok = "ок / ".strlen($result['comment']);
 }else{ $ok = '';}
+$all = (int)$result['all'] / 60;
+$all = number_format($all, 2, '.', '');
+$text = $_GET['link'] == $result['id']?'сейчас воспроизводится':'';
 echo'
 <tr>
 <td><a style="font-size:15px; line-height:40px;" >'.$ch.'</a></td>
 <td><a style="font-size:15px; line-height:40px;" href="/reg/play.php?id='.$idknigi.'&link='.$result['id'].'" >'.$result['title_links'].'</a></td>
+<td>'.$text.'</td>
+<td>'.$all.'</td>
 <td><div class="container" style="width: 200px; ">
   <div class="progress" >
     <div class="progress-bar progress-bar active" role="progressbar" aria-valuenow="'.$result['progress'].'" aria-valuemin="0" aria-valuemax="100" style="width:'.$result['progress'].'%">
